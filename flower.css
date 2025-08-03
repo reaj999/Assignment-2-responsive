@@ -1,0 +1,398 @@
+
+/* Noto Serif font setup */
+body {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* or any desired weight */
+    font-style: normal;
+}
+font-noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+font-inter {
+  font-family: "inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+
+
+/* Navbar items */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 150px;
+    
+}
+
+.logo {
+    width: 135px;
+    height: 82px;
+}
+
+.nav-links {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 48px;
+}
+.nav-links li {
+    display: flex;
+    align-items: center;
+}
+.cart-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.bold-ones {
+    font-family: "inter", sans-serif;
+    font-weight: 600;
+    color: rgba(37, 36, 50, 1);
+}
+
+.regular-ones {
+    font-family: "inter", sans-serif;
+    font-weight: 300;
+    color: rgba(137, 135, 161, 1);
+}
+
+/* Hero Container */
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1140px;
+    margin: 162px auto; /* This centers the container horizontally */
+    margin-bottom: 120px; /* Adjust as needed */
+}
+
+.hero-big-text {
+    font-family: Noto Serif, serif;
+    font-size: 65px;
+    font-weight: 800;
+    color: #000000;
+}
+
+.span-color {
+    font-family: Noto Serif, serif;
+    font-size: 65px;
+    font-weight: 800;
+    color: rgba(233, 90, 8, 1);
+}
+
+.hero-description {
+    font-family: "inter", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    max-width: 600px;
+    overflow-wrap: break-word; /* Allow text to wrap */
+    word-break: break-word; /* Break long words if needed */
+}
+
+.hero-text-container {
+    max-width: 50%;
+}
+
+.hero-image {
+    max-width: 50%;
+    height: auto;
+}
+
+
+/* Our plant section */
+
+.our-plant {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    max-width: 1140px;
+    margin: 0px auto; /* Centers the section */
+}
+
+.our-plant-big-text {
+    font-family: Noto Serif, serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 1);
+}
+
+.our-plant-color {
+    color: rgba(233, 90, 8, 1);
+}
+
+.our-plant-description {
+    font-family: "inter", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    overflow-wrap: break-word; /* Allow text to wrap */
+    word-break: break-word; /* Break long words if needed */
+    margin-bottom: 50px; /* Add space below the description */
+}
+
+.our-plant-container {
+    display: block;
+    align-items: center;
+    text-align: center;   /* Center text and inline elements */
+    margin: 0 auto;       /* Center the container itself if it has a width */
+}
+
+/* card section */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(270px, 1fr)); /* Responsive grid */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line */
+    gap: 20px; /* Space between cards */
+    max-width: 1140px;
+    margin: 0 auto; /* Centers the card container */
+}
+
+.card-image {
+    width: 100%;
+    height: 323px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.card-title {
+    font-family: "inter", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(17, 17, 17, 1);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.card-price {
+    font-family: "inter", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: rgba(17, 17, 17, 1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(233, 90, 8, 1);
+    color: white;
+    font-family: "inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from links */
+    margin-bottom: 30px;
+}
+
+
+/* Flower lover section */
+
+.flower-lover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1140px;
+    margin: 0 auto; /* Centers the section */
+    gap: 60px;
+    margin-top: 211px; /* Space above the section */
+    margin-bottom: 134px; /* Space below the section */
+}
+
+.flower-lover-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    max-width: 1140px;
+    margin: 0 auto; /* Centers the section */
+    margin-top: 211px;
+    gap: 60px; /*Space between text and image */
+    margin-bottom: 134px;
+}
+
+.flower-lover-big-text {
+    font-family: Noto Serif, serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 38px;
+    margin-bottom: 20px;
+}
+
+.flower-lover-list {
+    font-family: "inter", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-bottom: 50px; /* Add space below the list */
+    overflow-wrap: break-word; /* Allow text to wrap */
+    word-break: break-word; /* Break long words if needed */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between list items */
+}
+
+.flower-lover-image-container {
+    position: relative; /* Needed for absolute positioning of badge */
+    display: inline-block; /* Allows the image to be treated as a block element */
+}
+
+#badge {
+    position: absolute;
+    top: -160px; /* Adjust as needed to position the badge */
+    right: -125px;
+    width: 286px; /* Adjust as needed */
+    height: 286px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+
+/* latest deals */
+
+.latest-deals-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0px 0px;
+}
+
+.latest-deals {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    max-width: 1140px;
+    margin: 0 auto; /* Centers the section */
+}
+
+.latest-deals-big-text {
+    font-family: Noto Serif, serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 1);
+    text-align: center; /* Center the text */
+}
+
+.latest-deals-description {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: "inter", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    overflow-wrap: break-word; /* Allow text to wrap */
+    word-break: break-word; /* Break long words if needed */
+}
+
+.latest-deals-images{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px; /* Space between images */
+    max-width: 1140px;
+    margin: 20 auto; /* Centers the section */
+    margin-top: 30px; /* Space above the section */
+    margin-bottom: 120px; /* Space below the section */
+}
+
+.image1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.image2{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.image3{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.deal-image-text {
+    position: absolute;
+    align-items: center;
+    font-family: "inter", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: rgba(17, 17, 17, 1);
+}
+
+.deal-image-container {
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deal-image-text {
+    position: absolute;
+    top: 30%;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the link */
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-family: "inter", sans-serif;
+    padding: 10px 0px; /* Add padding for better appearance */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.text1 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.text2 {
+    font-size: 17px;
+    font-weight: 700;
+}
+.text3 {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.deal-shop-link {
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the link */
+    background-color: none;
+    color: white;
+    font-family: "inter", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 10px auto; /* Add padding for better appearance */
+    text-decoration: underline; /* Remove underline from links */
+}
