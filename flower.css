@@ -31,6 +31,8 @@ font-inter {
     justify-content: space-between;
     align-items: center;
     padding: 25px 150px;
+    max-width: 1140px; /* Centers the navbar */
+    margin: 0 auto; /* Centers the navbar */
     
 }
 
@@ -273,129 +275,7 @@ font-inter {
 
 
 
-/* latest deals */
 
-.latest-deals-container {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center;
-    align-items: center;
-    max-width: 1140px;
-    margin: 0px 0px;
-}
-
-.latest-deals {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    max-width: 1140px;
-    margin: 0 auto; /* Centers the section */
-}
-
-.latest-deals-big-text {
-    font-family: Noto Serif, serif;
-    font-size: 50px;
-    font-weight: 800;
-    color: rgba(0, 0, 0, 1);
-    text-align: center; /* Center the text */
-}
-
-.latest-deals-description {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    font-family: "inter", sans-serif;
-    font-size: 22px;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.5);
-    margin-top: 10px;
-    overflow-wrap: break-word; /* Allow text to wrap */
-    word-break: break-word; /* Break long words if needed */
-}
-
-.latest-deals-images{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px; /* Space between images */
-    max-width: 1140px;
-    margin: 20 auto; /* Centers the section */
-    margin-top: 30px; /* Space above the section */
-    margin-bottom: 120px; /* Space below the section */
-}
-
-.image1{
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-.image2{
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-
-.image3{
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
-}
-
-.deal-image-text {
-    position: absolute;
-    align-items: center;
-    font-family: "inter", sans-serif;
-    font-size: 22px;
-    font-weight: 800;
-    color: rgba(17, 17, 17, 1);
-}
-
-.deal-image-container {
-    position: relative; 
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.deal-image-text {
-    position: absolute;
-    top: 30%;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center the link */
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    font-family: "inter", sans-serif;
-    padding: 10px 0px; /* Add padding for better appearance */
-    text-decoration: none; /* Remove underline from links */
-}
-
-.text1 {
-    font-size: 17px;
-    font-weight: 700;
-}
-
-.text2 {
-    font-size: 17px;
-    font-weight: 700;
-}
-.text3 {
-    font-size: 22px;
-    font-weight: 800;
-}
-
-.deal-shop-link {
-    position: absolute;
-    top: 50%;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center the link */
-    background-color: none;
-    color: white;
-    font-family: "inter", sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    padding: 10px auto; /* Add padding for better appearance */
-    text-decoration: underline; /* Remove underline from links */
-}
 
 
 /* join section  */
@@ -457,4 +337,155 @@ font-inter {
     border: none;
     cursor: pointer;
     border-radius: 0px;
+}
+
+/* Footer */
+.footer {
+    background-color:white;
+    max-width: 1140px;
+    margin: 50px auto; /* Centers the footer */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, auto);
+    gap: 26px 100px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px; 
+}
+
+.footer-icons img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+ 
+
+/* best deals 2 part */
+
+
+.latest-deals2 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    max-width: 1140px;
+    margin: 0 auto; /* Centers the section */
+}
+
+.latest-deals2-container{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0px 0px;
+}
+
+.our-plant-description {
+    font-family: "inter", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    overflow-wrap: break-word; /* Allow text to wrap */
+    word-break: break-word; /* Break long words if needed */
+    margin-bottom: 50px; /* Add space below the description */
+    text-align: center; /* Center the text */
+}
+
+.promo-boxes{
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr 1fr); 
+    grid-template-rows: repeat(1fr 1fr);
+    gap: 25px;
+    max-width: 1140px;
+    margin: 0 auto; /* Centers the section */
+    margin-top: 30px; /* Space above the section */
+    margin-bottom: 120px; /* Space below the section */
+}
+
+.promo-box {
+    border-radius: 22px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 206px;
+    position: relative;
+    overflow: hidden; /* Ensures content doesn't overflow the box */
+}
+
+.promo-box:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.promo-box:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.promo-box:nth-child(3) {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    min-height: 100%;
+}
+
+.promo-content{
+    position: absolute;
+    top :0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-family: "inter", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 22px;
+    padding: 32px 24px;
+    box-sizing: border-box; 
+}
+
+.promo-link {
+    color: white;
+    text-decoration: underline; /* Remove underline from links */
+    font-family: "inter", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 10px; /* Space between text and link */
 }
